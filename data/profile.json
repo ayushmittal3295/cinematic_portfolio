@@ -57,22 +57,28 @@
       "tech": ["JavaScript", "React", "Node.js", "CSS", "Git", "Responsive Design"]
     },
     {
-      "id": 2,
-      "role": "Student Facilitator",
-      "company": "Google Cloud Arcade Facilitator Program",
-      "companyShort": "Google Cloud Arcade",
-      "type": "Program",
-      "location": "Remote",
-      "period": "Aug 2025",
-      "periodEnd": "Dec 2025",
-      "bullets": [
-        "Helped students learn cloud computing concepts through Google Cloud Arcade activities.",
-        "Assisted teams in building cloud-native applications and debugging infrastructure challenges.",
-        "Explained technical concepts and supported hands-on labs for learners from diverse backgrounds."
-      ],
-      "desc": "Mentored students in cloud technology and helped deliver practical learning experiences using Google Cloud tools.",
-      "tech": ["Google Cloud", "Cloud Labs", "Technical Mentoring", "Education"]
-    },
+  "id": 2,
+  "role": "Placement Coordinator",
+  "company": "Galgotias University",
+  "companyShort": "Galgotias University",
+  "type": "Part-time",
+  "location": "Greater Noida, Uttar Pradesh, India",
+  "period": "Jun 2026",
+  "periodEnd": "Present",
+  "bullets": [
+    "Coordinated placement activities between students, the Training & Placement Cell, and recruiting companies.",
+    "Assisted in organizing campus recruitment drives, pre-placement talks, and placement-related events.",
+    "Managed student communication, interview schedules, and placement documentation to ensure smooth recruitment processes."
+  ],
+  "desc": "Serving as a Placement Coordinator, facilitating communication between students and recruiters while supporting the successful execution of campus placement activities.",
+  "tech": [
+    "Leadership",
+    "Communication",
+    "Event Coordination",
+    "Student Management",
+    "Team Collaboration"
+  ]
+},
     {
       "id": 3,
       "role": "AI-ML Virtual Intern",
@@ -97,7 +103,7 @@
       "title": "EcoLearn",
       "subtitle": "Sustainable education platform",
       "type": "Web App",
-      "link": "https://github.com/ayushmittal3295/EcoLearn",
+      "link": "https://drive.google.com/file/d/1RpueuUtY40It2esdq_-5Lam31iviACJx/view",
       "image": "/assets/ecolearn.png",
       "tech": ["HTML5", "CSS3", "JavaScript", "Node.js", "Firebase", "MySQL"],
       "desc": "A sustainable education platform with interactive learning experiences, secure authentication, and responsive design."
@@ -107,7 +113,7 @@
       "title": "API News Fetcher",
       "subtitle": "Live news web app",
       "type": "Frontend + Backend",
-      "link": "https://github.com/ayushmittal3295/API_NEWS_FETCHER",
+      "link": "https://drive.google.com/file/d/1Y2LGM4d8e9WR0gA1cZ2i7plWqEgGhfPl/view",
       "image": "/assets/api_news_fetcher.png",
       "tech": ["HTML5", "CSS3", "JavaScript", "Node.js", "APIs"],
       "desc": "A dynamic web app that fetches live news articles and presents them with a clean, responsive interface."
@@ -117,7 +123,7 @@
       "title": "Task Manager Pro",
       "subtitle": "Smart productivity dashboard",
       "type": "Full-Stack App",
-      "link": "https://github.com/ayushmittal3295/Task-Manager-Pro",
+      "link": "https://drive.google.com/file/d/1dmXfyX5zsYwMdixKgFLURXGqVM37EoJh/view",
       "image": "/assets/task_manager_pro.png",
       "tech": ["HTML5", "CSS3", "JavaScript", "Node.js", "Spring Boot", "Responsive UI"],
       "desc": "A task management application with scheduling, status tracking, and interactive task organization."

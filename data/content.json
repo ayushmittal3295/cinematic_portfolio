@@ -4,7 +4,7 @@
   },
   "hero": {
     "taglineHighlight": "Full-Stack",
-    "freelanceNote": "Open to internships, freelance work, and collaborative projects.",
+    "freelanceNote": "Open to internships and collaborative projects.",
     "availableLabel": "Available for opportunities",
     "pills": ["JavaScript", "Java", "Spring Boot", "Responsive UI"],
     "specialistStat": { "value": "Full-Stack", "label": "Developer" }

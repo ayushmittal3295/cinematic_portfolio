@@ -1,0 +1,22 @@
+{
+  "site": {
+    "tagline": "Full Stack Portfolio"
+  },
+  "hero": {
+    "taglineHighlight": "Full-Stack",
+    "freelanceNote": "Open to internships, freelance work, and collaborative projects.",
+    "availableLabel": "Available for opportunities",
+    "pills": ["JavaScript", "Java", "Spring Boot", "Responsive UI"],
+    "specialistStat": { "value": "Full-Stack", "label": "Developer" }
+  },
+  "interstitial": {
+    "availabilityLabel": "Availability",
+    "basedInLabel": "Based in",
+    "statLabels": ["Projects", "Skills", "Experience"]
+  },
+  "footer": {
+    "eyebrow": "Let’s build something great",
+    "ctaLines": ["Modern web", "applications with"],
+    "ctaAccent": "frontend + backend"
+  }
+}

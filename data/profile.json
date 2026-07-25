@@ -1,0 +1,177 @@
+{
+  "name": {
+    "first": "Ayush",
+    "last": "Mittal",
+    "full": "Ayush Mittal"
+  },
+  "email": "mittalayush0205@gmail.com",
+  "tagline": "Building intelligent web experiences with modern JavaScript, Java, and Spring Boot.",
+  "description": "Full-stack developer and computer science student focused on responsive web apps, backend systems, and practical problem solving.",
+  "roles": {
+    "short": "Full Stack Developer",
+    "detailed": "JavaScript | Java | Spring Boot | Web Applications"
+  },
+  "location": {
+    "based": "Greater Noida, India",
+    "availability": "Internships / Full Time Opportunities"
+  },
+  "available": true,
+  "bio": "I'm Ayush Mittal, a dedicated Computer Science Engineering student at Galgotias University. I build responsive, high-performance web applications using JavaScript, Java, Spring Boot, and modern frontend tooling. My work combines clean UI design with backend reliability to create solutions that are both functional and engaging.",
+  "stats": [
+    { "value": "3+", "label": "Years Experience" },
+    { "value": "20+", "label": "Projects" },
+    { "value": "95%", "label": "Problem Solving" }
+  ],
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Java",
+    "Spring Boot",
+    "MySQL",
+    "MongoDB",
+    "Firebase",
+    "Git & GitHub",
+    "Algorithms",
+    "Data Structures",
+    "Machine Learning"
+  ],
+  "experience": [
+    {
+      "id": 1,
+      "role": "Tech Team Member",
+      "company": "Noida Nerds",
+      "companyShort": "Noida Nerds",
+      "type": "Part-time",
+      "location": "Greater Noida, India",
+      "period": "Dec 2025",
+      "periodEnd": "Present",
+      "bullets": [
+        "Collaborating with the tech team on web development projects and internal automation tasks.",
+        "Contributing to frontend features, backend integrations, and responsive UI improvements.",
+        "Supporting deployment workflows and code review processes to maintain high-quality releases."
+      ],
+      "desc": "Hands-on web development and technical support work, focusing on practical solutions and team-driven delivery.",
+      "tech": ["JavaScript", "React", "Node.js", "CSS", "Git", "Responsive Design"]
+    },
+    {
+      "id": 2,
+      "role": "Student Facilitator",
+      "company": "Google Cloud Arcade Facilitator Program",
+      "companyShort": "Google Cloud Arcade",
+      "type": "Program",
+      "location": "Remote",
+      "period": "Aug 2025",
+      "periodEnd": "Dec 2025",
+      "bullets": [
+        "Helped students learn cloud computing concepts through Google Cloud Arcade activities.",
+        "Assisted teams in building cloud-native applications and debugging infrastructure challenges.",
+        "Explained technical concepts and supported hands-on labs for learners from diverse backgrounds."
+      ],
+      "desc": "Mentored students in cloud technology and helped deliver practical learning experiences using Google Cloud tools.",
+      "tech": ["Google Cloud", "Cloud Labs", "Technical Mentoring", "Education"]
+    },
+    {
+      "id": 3,
+      "role": "AI-ML Virtual Intern",
+      "company": "Eduskills Foundation",
+      "companyShort": "Eduskills",
+      "type": "Internship",
+      "location": "Remote",
+      "period": "Apr 2025",
+      "periodEnd": "Jun 2025",
+      "bullets": [
+        "Explored supervised and unsupervised learning, deep learning, and data preprocessing techniques.",
+        "Worked with real datasets to implement machine learning models and evaluate performance.",
+        "Built practical solutions for predictive analysis, model tuning, and result visualization."
+      ],
+      "desc": "Gained hands-on AI and ML experience through virtual projects that applied algorithms to real data.",
+      "tech": ["Java", "Machine Learning", "Data Preprocessing", "Model Evaluation"]
+    }
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "title": "EcoLearn",
+      "subtitle": "Sustainable education platform",
+      "type": "Web App",
+      "link": "https://github.com/ayushmittal3295/EcoLearn",
+      "image": "/assets/ecolearn.png",
+      "tech": ["HTML5", "CSS3", "JavaScript", "Node.js", "Firebase", "MySQL"],
+      "desc": "A sustainable education platform with interactive learning experiences, secure authentication, and responsive design."
+    },
+    {
+      "id": 2,
+      "title": "API News Fetcher",
+      "subtitle": "Live news web app",
+      "type": "Frontend + Backend",
+      "link": "https://github.com/ayushmittal3295/API_NEWS_FETCHER",
+      "image": "/assets/api_news_fetcher.png",
+      "tech": ["HTML5", "CSS3", "JavaScript", "Node.js", "APIs"],
+      "desc": "A dynamic web app that fetches live news articles and presents them with a clean, responsive interface."
+    },
+    {
+      "id": 3,
+      "title": "Task Manager Pro",
+      "subtitle": "Smart productivity dashboard",
+      "type": "Full-Stack App",
+      "link": "https://github.com/ayushmittal3295/Task-Manager-Pro",
+      "image": "/assets/task_manager_pro.png",
+      "tech": ["HTML5", "CSS3", "JavaScript", "Node.js", "Spring Boot", "Responsive UI"],
+      "desc": "A task management application with scheduling, status tracking, and interactive task organization."
+    },
+    {
+      "id": 4,
+      "title": "CogniVibe AI",
+      "subtitle": "Emotion-adaptive learning experience",
+      "type": "AI Learning",
+      "link": "https://github.com/ayushmittal3295/cognivibe-ai",
+      "image": "/assets/cognivibe_ai.png",
+      "tech": ["React.js", "Node.js", "TensorFlow.js", "Face-API.js", "MySQL", "Tailwind CSS"],
+      "desc": "An emotion-adaptive learning platform that blends AI-powered interactions with gamified study features."
+    }
+  ],
+  "publications": [
+    {
+      "id": 1,
+      "title": "EcoLearn Launch",
+      "platform": "GitHub",
+      "year": "2025",
+      "link": "https://github.com/ayushmittal3295/EcoLearn",
+      "desc": "A sustainable education website built with modern web technologies and responsive design."
+    },
+    {
+      "id": 2,
+      "title": "API News Fetcher",
+      "platform": "GitHub",
+      "year": "2025",
+      "link": "https://github.com/ayushmittal3295/API_NEWS_FETCHER",
+      "desc": "A real-time news feed application using public APIs and JavaScript."
+    },
+    {
+      "id": 3,
+      "title": "Task Manager Pro",
+      "platform": "GitHub",
+      "year": "2025",
+      "link": "https://github.com/ayushmittal3295/Task-Manager-Pro",
+      "desc": "A productivity dashboard for creating, tracking, and managing tasks."
+    },
+    {
+      "id": 4,
+      "title": "CogniVibe AI",
+      "platform": "GitHub",
+      "year": "2025",
+      "link": "https://github.com/ayushmittal3295/cognivibe-ai",
+      "desc": "An adaptive learning prototype using emotion recognition and AI-driven study flows."
+    }
+  ],
+  "socials": [
+    { "label": "GitHub", "href": "https://github.com/ayushmittal3295" },
+    { "label": "LinkedIn", "href": "https://www.linkedin.com/in/ayush-mittal-241424295/" },
+    { "label": "Instagram", "href": "https://www.instagram.com/ayush_02_12/" },
+    { "label": "Twitter", "href": "https://x.com/AyushMitta50104" },
+    { "label": "Facebook", "href": "https://www.facebook.com/profile.php?id=61551218825494" }
+  ]
+}

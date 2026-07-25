@@ -39,25 +39,9 @@
     "Machine Learning"
   ],
   "experience": [
+   
     {
-      "id": 1,
-      "role": "Tech Team Member",
-      "company": "Noida Nerds",
-      "companyShort": "Noida Nerds",
-      "type": "Part-time",
-      "location": "Greater Noida, India",
-      "period": "Dec 2025",
-      "periodEnd": "Present",
-      "bullets": [
-        "Collaborating with the tech team on web development projects and internal automation tasks.",
-        "Contributing to frontend features, backend integrations, and responsive UI improvements.",
-        "Supporting deployment workflows and code review processes to maintain high-quality releases."
-      ],
-      "desc": "Hands-on web development and technical support work, focusing on practical solutions and team-driven delivery.",
-      "tech": ["JavaScript", "React", "Node.js", "CSS", "Git", "Responsive Design"]
-    },
-    {
-  "id": 2,
+  "id": 1,
   "role": "Placement Coordinator",
   "company": "Galgotias University",
   "companyShort": "Galgotias University",
@@ -79,6 +63,25 @@
     "Team Collaboration"
   ]
 },
+
+ {
+      "id": 2,
+      "role": "Tech Team Member",
+      "company": "Noida Nerds",
+      "companyShort": "Noida Nerds",
+      "type": "Part-time",
+      "location": "Greater Noida, India",
+      "period": "Dec 2025",
+      "periodEnd": "Jan 2026",
+      "bullets": [
+        "Collaborating with the tech team on web development projects and internal automation tasks.",
+        "Contributing to frontend features, backend integrations, and responsive UI improvements.",
+        "Supporting deployment workflows and code review processes to maintain high-quality releases."
+      ],
+      "desc": "Hands-on web development and technical support work, focusing on practical solutions and team-driven delivery.",
+      "tech": ["JavaScript", "React", "Node.js", "CSS", "Git", "Responsive Design"]
+    },
+
     {
       "id": 3,
       "role": "AI-ML Virtual Intern",

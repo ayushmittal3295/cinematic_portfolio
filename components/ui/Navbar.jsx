@@ -12,14 +12,18 @@ import profile from '@/data/profile.json'
 import styles from '@/styles/ui/Navbar.module.css'
 import { FaBars, FaTimes } from 'react-icons/fa'
 
-// idx matches snap position in page.js (0=video,1=hero,2=about,3-4=projects,5=work-exp,6=publications,7=footer)
+const PROJECT_SLIDES = profile.projects.length
+const WORK_EXP_INDEX = 3 + PROJECT_SLIDES
+const PUBLICATIONS_INDEX = WORK_EXP_INDEX + 1
+const FOOTER_INDEX = WORK_EXP_INDEX + 3
+
 const NAV_ITEMS = [
-  { label: 'Home',         idx: 0 },
-  { label: 'About',        idx: 2 },
-  { label: 'Work',         idx: 3 },
-  { label: 'Experience',   idx: 5 },
-  { label: 'Impact',       idx: 6 },
-  { label: 'Contact',      idx: 7 },
+  { label: 'Home',       idx: 0 },
+  { label: 'About',      idx: 2 },
+  { label: 'Work',       idx: 3 },
+  { label: 'Experience', idx: WORK_EXP_INDEX },
+  { label: 'Impact',     idx: PUBLICATIONS_INDEX },
+  { label: 'Contact',    idx: FOOTER_INDEX },
 ]
 
 function getIST() {
@@ -30,6 +34,10 @@ function getIST() {
     second: '2-digit',
     hour12: true,
   }).toUpperCase()
+}
+
+function getViewportHeight() {
+  return window.visualViewport?.height || window.innerHeight
 }
 
 export default function Navbar() {
@@ -103,7 +111,7 @@ export default function Navbar() {
                   onClick={() => {
                     const scroller = document.querySelector('main')
                     if (scroller) gsap.to(scroller, {
-                      scrollTop: idx * window.innerHeight,
+                      scrollTop: idx * getViewportHeight(),
                       duration: 1.0,
                       ease: 'power3.inOut',
                     })
@@ -142,7 +150,7 @@ export default function Navbar() {
               onClick={() => {
                 const scroller = document.querySelector('main')
                 if (scroller) gsap.to(scroller, {
-                  scrollTop: idx * window.innerHeight,
+                  scrollTop: idx * getViewportHeight(),
                   duration: 1.0,
                   ease: 'power3.inOut',
                 })

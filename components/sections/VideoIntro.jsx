@@ -1,11 +1,11 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
-import dynamic from 'next/dynamic'
-import { gsap } from '@/lib/gsap'
-import profile from '@/data/profile.json'
 import content from '@/data/content.json'
+import profile from '@/data/profile.json'
+import { gsap } from '@/lib/gsap'
 import styles from '@/styles/sections/VideoIntro.module.css'
+import dynamic from 'next/dynamic'
+import { useEffect, useRef, useState } from 'react'
 
 const CinematicLayer = dynamic(() => import('@/components/three/CinematicLayer'), { ssr: false })
 

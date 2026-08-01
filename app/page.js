@@ -1,16 +1,16 @@
 'use client'
 
-import { useEffect, useRef, useState } from 'react'
-import { gsap } from '@/lib/gsap'
-import Navbar                from '@/components/ui/Navbar'
-import VideoIntro            from '@/components/sections/VideoIntro'
-import HeroSection           from '@/components/sections/HeroSection'
-import AboutSection          from '@/components/sections/AboutSection'
-import ProjectsSection       from '@/components/sections/ProjectsSection'
-import WorkExperienceSection from '@/components/sections/WorkExperienceSection'
+import AboutSection from '@/components/sections/AboutSection'
+import HeroSection from '@/components/sections/HeroSection'
+import ProjectsSection from '@/components/sections/ProjectsSection'
 import PublicationsFooterSection from '@/components/sections/PublicationsFooterSection'
 import ScreenLoader from '@/components/sections/ScreenLoader'
-import profile               from '@/data/profile.json'
+import VideoIntro from '@/components/sections/VideoIntro'
+import WorkExperienceSection from '@/components/sections/WorkExperienceSection'
+import Navbar from '@/components/ui/Navbar'
+import profile from '@/data/profile.json'
+import { gsap } from '@/lib/gsap'
+import { useEffect, useRef, useState } from 'react'
 
 // Snap: 0=video 1=hero 2=about 3..4=projects 5=work-exp 6=publications 7=footer (mobile: 6=publications 7=footer)
 const PROJECT_SLIDES = profile.projects.length

@@ -1,17 +1,21 @@
 
 'use client'
 
-import { useEffect, useRef, Fragment } from 'react'
-import Image from 'next/image'
-import * as THREE from 'three'
+import content from '@/data/content.json'
+import profile from '@/data/profile.json'
 import { gsap } from '@/lib/gsap'
+import styles from '@/styles/sections/PublicationsFooterSection.module.css'
+import Image from 'next/image'
+import { Fragment, useEffect, useRef } from 'react'
 import {
-  FaGithub, FaLinkedinIn, FaMedium, FaInstagram, FaYoutube, FaEnvelope,
+    FaEnvelope,
+    FaGithub,
+    FaInstagram,
+    FaLinkedinIn, FaMedium,
+    FaYoutube,
 } from 'react-icons/fa'
 import { FiArrowUpRight, FiChevronDown } from 'react-icons/fi'
-import profile from '@/data/profile.json'
-import content from '@/data/content.json'
-import styles from '@/styles/sections/PublicationsFooterSection.module.css'
+import * as THREE from 'three'
 
 const PUBS = profile.publications
 

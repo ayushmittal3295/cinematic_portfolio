@@ -9,9 +9,13 @@ import styles from '@/styles/sections/VideoIntro.module.css'
 
 const CinematicLayer = dynamic(() => import('@/components/three/CinematicLayer'), { ssr: false })
 
+function getViewportHeight() {
+  return window.visualViewport?.height || window.innerHeight
+}
+
 function scrollNext() {
   const main = document.querySelector('main')
-  if (main) main.scrollTo({ top: window.innerHeight, behavior: 'smooth' })
+  if (main) main.scrollTo({ top: getViewportHeight(), behavior: 'smooth' })
 }
 
 export default function VideoIntro() {

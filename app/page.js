@@ -28,6 +28,16 @@ export default function Home() {
     const el = mainRef.current
     if (!el) return
 
+    function getViewportHeight() {
+      return window.visualViewport?.height || window.innerHeight
+    }
+
+    function syncViewportHeight() {
+      el.style.height = `${getViewportHeight()}px`
+    }
+
+    syncViewportHeight()
+
     // Fade to black → instant scrollTop jump → fade in
     // Used whenever we loop footer → first section
     function fadeLoop(targetScrollTop, targetIdx) {
@@ -68,7 +78,7 @@ export default function Home() {
 
       // Top → footer: fade-cut instead of scrolling forward through all sections
       if (idxRef.current === 0 && idx === TOTAL - 1) {
-        fadeLoop((TOTAL - 1) * window.innerHeight, TOTAL - 1)
+        fadeLoop((TOTAL - 1) * getViewportHeight(), TOTAL - 1)
         return
       }
 
@@ -76,7 +86,7 @@ export default function Home() {
       busyRef.current = true
       tweenRef.current?.kill()
       tweenRef.current = gsap.to(el, {
-        scrollTop: idx * window.innerHeight,
+        scrollTop: idx * getViewportHeight(),
         duration: 1.0,
         ease: 'power3.inOut',
         onComplete: () => { setTimeout(() => { busyRef.current = false }, 600) },
@@ -98,7 +108,7 @@ export default function Home() {
     }
 
     function onScroll() {
-      idxRef.current = Math.round(el.scrollTop / window.innerHeight)
+      idxRef.current = Math.round(el.scrollTop / getViewportHeight())
     }
 
     // Footer video ends → same fade-cut loop back to top
@@ -131,6 +141,7 @@ export default function Home() {
       el.addEventListener('touchend',   onMobileTouchEnd,   { passive: true })
     }
     window.addEventListener('footer-loop-back', onFooterLoop)
+    window.addEventListener('resize', syncViewportHeight)
 
     return () => {
       el.removeEventListener('wheel',  onWheel)
@@ -143,6 +154,7 @@ export default function Home() {
         el.removeEventListener('touchend',   onMobileTouchEnd)
       }
       window.removeEventListener('footer-loop-back', onFooterLoop)
+      window.removeEventListener('resize', syncViewportHeight)
       tweenRef.current?.kill()
     }
   }, [])
@@ -167,7 +179,7 @@ export default function Home() {
       />
 
       <Navbar />
-      <main ref={mainRef} style={{ height: '100vh', overflowY: 'scroll', overscrollBehavior: 'none' }}>
+      <main ref={mainRef} style={{ height: '100dvh', minHeight: '100dvh', overflowY: 'scroll', overscrollBehavior: 'none' }}>
         <div>
           <VideoIntro />
           <HeroSection />

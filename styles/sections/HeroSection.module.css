@@ -315,26 +315,27 @@
 /* ─── Responsive: Mobile < 768px ────────────────────────── */
 @media (max-width: 767px) {
   .section {
-    height: 100svh;
-    min-height: -webkit-fill-available;
+    height: 100dvh;
+    min-height: 100svh;
   }
 
   .socialSidebar { display: none; }
   .cardsCol      { display: none; }
 
   .content {
-    left: 1.25rem;
-    top: 5rem;
-    gap: 0.5rem;
-    max-width: 58vw;
-    --hero-name-size: clamp(2rem, 8.5vw, 3.5rem);
+    left: 1rem;
+    top: 4.6rem;
+    gap: 0.55rem;
+    max-width: min(60vw, 16rem);
+    --hero-name-size: clamp(2rem, 8.5vw, 3.4rem);
   }
 
+  .greetText, .roleText { font-size: 0.78rem; }
   .name { white-space: normal; }
 
   .photo {
     width: 72%;
-    height: 72svh;
+    height: 72dvh;
     top: auto;
     bottom: 0;
     right: 0;
@@ -350,16 +351,22 @@
   .viewBtn     { font-size: 0.78rem; padding: 0.55rem 1.2rem; }
 }
 
-@media (max-width: 374px) {
-  .photo   { width: 75%; height: 65svh; }
-  .content { top: 4.5rem; max-width: 60vw; }
+@media (max-width: 480px) {
+  .content { top: 4rem; max-width: 58vw; gap: 0.45rem; }
+  .photo   { width: 76%; height: 68dvh; }
+  .pills   { grid-template-columns: 1fr; }
 }
 
 /* ─── Responsive: Tablet 768–1023px ─────────────────────── */
 @media (min-width: 768px) and (max-width: 1023px) {
-  .content     { left: 3rem; top: 18vh; max-width: 40vw; --hero-name-size: clamp(3rem, 7vw, 6rem); }
+  .content     { left: 2.25rem; top: 16vh; max-width: 42vw; --hero-name-size: clamp(3rem, 7vw, 6rem); }
   .photo       { width: 55%; }
   .cardsCol    { left: 43%; top: 22vh; width: clamp(175px, 18vw, 240px); }
   .socialSidebar { width: 2.25rem; }
   .name        { white-space: normal; }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .content { gap: 2.4rem; }
+  .cardsCol { width: clamp(220px, 20vw, 280px); }
 }

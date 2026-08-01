@@ -269,15 +269,21 @@
 
 /* ── Mobile ──────────────────────────────────── */
 @media (max-width: 767px) {
+  .topBar {
+    padding: 3.25rem 1rem 0;
+  }
+
   .slideContent {
     grid-template-columns: 1fr;
     align-items: flex-end;
     gap: 1rem;
+    padding: 4.5rem 1rem 4rem;
   }
 
   .slideRight { display: none; }
   .title      { font-size: 1.8rem; }
   .slideNum   { font-size: 5rem; bottom: 5rem; }
+  .bottomUI   { padding: 0 1rem 1rem; }
 }
 
 /* ── Mobile landscape / small tablet ────────── */
@@ -291,4 +297,5 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .slideContent { grid-template-columns: minmax(0, 45%) minmax(0, 1fr); }
   .title { font-size: 2.6rem; }
+  .topBar { padding-top: 3rem; }
 }

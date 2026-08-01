@@ -57,25 +57,44 @@
 /* ─── Base ──────────────────────────────────────────────── */
 html, body {
   height: 100%;
+  min-height: 100%;
   overflow: hidden;
+  overflow-x: hidden;
 }
 
 body {
   background: var(--background);
   color:      var(--foreground);
   font-family: var(--font-geist-sans), Arial, sans-serif;
+  min-height: 100dvh;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* ─── Hide scrollbar ─────────────────────────────────────── */
 main::-webkit-scrollbar { display: none; }
-main { scrollbar-width: none; -ms-overflow-style: none; }
+main {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  height: 100dvh;
+  min-height: 100svh;
+}
+
+@supports not (height: 100dvh) {
+  main { height: 100vh; }
+}
 
 @media (max-width: 767px) {
   :root {
     --hero-name-size: clamp(3rem, 10vw, 5rem);
   }
 
-  /* Override inline 100vh - Chrome mobile toolbar hides bottom content */
-  html, body { height: 100svh !important; }
-  main { height: 100svh !important; }
+  html, body {
+    height: 100%;
+    min-height: 100%;
+  }
+
+  main {
+    height: 100dvh !important;
+    min-height: 100svh !important;
+  }
 }

@@ -120,6 +120,7 @@ export default function PublicationsFooterSection() {
     if (!wrapper || !sticky || !scroller) return
 
     const isMobile = window.innerWidth < 768
+    const getViewportHeight = () => window.visualViewport?.height || window.innerHeight
 
     let renderer, vidUni, rafId, videoPlaying = false
     let onMouseMove = () => {}, onResize = () => {}
@@ -232,7 +233,7 @@ export default function PublicationsFooterSection() {
 
     // ── Scroll-driven animation ───────────────────────────────
     function onScroll() {
-      const vh   = window.innerHeight
+      const vh   = getViewportHeight()
       // getBoundingClientRect is reliable regardless of offsetParent chain or navbar
       const dist = -wrapper.getBoundingClientRect().top
 

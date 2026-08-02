@@ -18,9 +18,9 @@
   "available": true,
   "bio": "I'm Ayush Mittal, a dedicated Computer Science Engineering student at Galgotias University. I build responsive, high-performance web applications using JavaScript, Java, Spring Boot, and modern frontend tooling. My work combines clean UI design with backend reliability to create solutions that are both functional and engaging.",
   "stats": [
-    { "value": "3+", "label": "Years Experience" },
-    { "value": "20+", "label": "Projects" },
-    { "value": "95%", "label": "Problem Solving" }
+ { "value": "20+", "label": "Projects Built" },
+  { "value": "Java", "label": "Backend Developer" },
+  { "value": "Spring Boot", "label": "Primary Tech" }
   ],
   "skills": [
     "HTML5",

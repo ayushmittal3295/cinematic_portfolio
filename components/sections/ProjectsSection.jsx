@@ -87,7 +87,7 @@ export default function ProjectsSection() {
       trigger:  section,
       scroller,
       start:    'top top',
-      end:      () => `+=${(n - 1) * window.innerHeight}`,
+      end:      () => `+=${(n - 1) * (window.visualViewport?.height || window.innerHeight)}`,
       onUpdate: (self) => {
         tl.progress(self.progress)
 

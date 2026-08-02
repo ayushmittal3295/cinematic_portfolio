@@ -140,6 +140,8 @@ export default function Home() {
       el.addEventListener('touchstart', onMobileTouchStart, { passive: true })
       el.addEventListener('touchend',   onMobileTouchEnd,   { passive: true })
     }
+    const viewport = window.visualViewport
+    viewport?.addEventListener('resize', syncViewportHeight)
     window.addEventListener('footer-loop-back', onFooterLoop)
     window.addEventListener('resize', syncViewportHeight)
 
@@ -153,6 +155,7 @@ export default function Home() {
         el.removeEventListener('touchstart', onMobileTouchStart)
         el.removeEventListener('touchend',   onMobileTouchEnd)
       }
+      viewport?.removeEventListener('resize', syncViewportHeight)
       window.removeEventListener('footer-loop-back', onFooterLoop)
       window.removeEventListener('resize', syncViewportHeight)
       tweenRef.current?.kill()

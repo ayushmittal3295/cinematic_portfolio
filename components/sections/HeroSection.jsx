@@ -44,8 +44,9 @@ export default function HeroSection() {
 
   function handleViewProjects() {
     const scroller = document.querySelector('main')
+    const viewportHeight = window.visualViewport?.height || window.innerHeight
     if (scroller) {
-      gsap.to(scroller, { scrollTop: 3 * window.innerHeight, duration: 1.0, ease: 'power3.inOut' })
+      gsap.to(scroller, { scrollTop: 3 * viewportHeight, duration: 1.0, ease: 'power3.inOut' })
     }
   }
 

@@ -85,7 +85,8 @@ function easeInOut(t) {
 
 function handleViewProjects() {
   const scroller = document.querySelector('main')
-  if (scroller) gsap.to(scroller, { scrollTop: 3 * window.innerHeight, duration: 1.0, ease: 'power3.inOut' })
+  const viewportHeight = window.visualViewport?.height || window.innerHeight
+  if (scroller) gsap.to(scroller, { scrollTop: 3 * viewportHeight, duration: 1.0, ease: 'power3.inOut' })
 }
 
 export default function PublicationsFooterSection() {

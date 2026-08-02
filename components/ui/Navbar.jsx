@@ -41,7 +41,7 @@ function getViewportHeight() {
 }
 
 export default function Navbar() {
-  const [time,    setTime]    = useState('')   // '' on SSR - avoids hydration mismatch
+  const [time,    setTime]    = useState('IST --')
   const [onIntro, setOnIntro] = useState(true)
   const [onDark,  setOnDark]  = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
@@ -50,17 +50,22 @@ export default function Navbar() {
   const hidden      = useRef(false)
   const stopTimer   = useRef(null)
 
-  // Live clock - set immediately on mount, then every second
+  // Live clock - update once after mount, then every second
   useEffect(() => {
-    setTime(getIST())
-    const id = setInterval(() => setTime(getIST()), 1000)
-    return () => clearInterval(id)
+    const updateTime = () => setTime(getIST())
+    const rafId = window.requestAnimationFrame(updateTime)
+    const id = window.setInterval(updateTime, 1000)
+
+    return () => {
+      window.cancelAnimationFrame(rafId)
+      window.clearInterval(id)
+    }
   }, [])
 
   // Auto-hide on scroll-down, reveal on scroll-up or scroll-stop
   useEffect(() => {
     const scroller = document.querySelector('main') ?? window
-    const vh = window.innerHeight
+    const vh = window.visualViewport?.height || window.innerHeight
 
     function showNavbar() {
       if (!hidden.current) return
@@ -100,7 +105,9 @@ export default function Navbar() {
   return (
     <>
       <header ref={headerRef} className={`${styles.header} ${onIntro ? styles.introMode : ''} ${onDark ? styles.darkMode : ''}`}>
-        <span className={styles.time}>IST - {time}</span>
+        <span className={styles.time} suppressHydrationWarning>
+          IST - {time}
+        </span>
 
         <NavigationMenu className={styles.navMenu}>
           <NavigationMenuList className="flex gap-6">

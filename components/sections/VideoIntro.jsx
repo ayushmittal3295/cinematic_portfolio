@@ -33,7 +33,12 @@ export default function VideoIntro() {
   const [isMobile, setIsMobile] = useState(false)
 
   useEffect(() => {
-    setIsMobile(window.matchMedia('(max-width: 767px)').matches)
+    const mediaQuery = window.matchMedia('(max-width: 767px)')
+    const updateMobileState = () => setIsMobile(mediaQuery.matches)
+
+    updateMobileState()
+    mediaQuery.addEventListener('change', updateMobileState)
+    return () => mediaQuery.removeEventListener('change', updateMobileState)
   }, [])
 
   // Entrance animation
@@ -120,7 +125,7 @@ export default function VideoIntro() {
 
   function handleEnded() {
     const main = document.querySelector('main')
-    if (main && main.scrollTop < window.innerHeight * 0.4) scrollNext()
+    if (main && main.scrollTop < getViewportHeight() * 0.4) scrollNext()
   }
 
   return (
